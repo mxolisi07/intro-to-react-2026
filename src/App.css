@@ -20,6 +20,7 @@ header {
   flex: 1;
   background-color: yellow;
 }
+
 #first {
   display: grid;
   grid-template-columns: 1fr;
@@ -28,6 +29,7 @@ header {
   /* column-gap: 12px; */
   /* row-gap: 12px; */
 }
+
 .students {
   background-color: black;
   height: 200px;
@@ -36,18 +38,32 @@ header {
 
 /* mobile first, desktop first */
 
-@media only screen and (min-width: 320px) { /* breakpoints */
+@media only screen and (min-width: 320px) {
+
+  /* breakpoints */
   #first {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media only screen and (min-width: 480px) {
   #first {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
 }
+
 @media only screen and (min-width: 768px) {
   #first {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  #first {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
